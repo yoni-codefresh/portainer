@@ -18,6 +18,7 @@ steps:
       - bower install --allow-root
       - grunt build-webapp
       - echo "***** Show me the content! *****" && ls -l
+      - ls -lR build
       #- cp build/linux/Dockerfile . # work-around the dockerfile not located in the build_image step
 
   build_image:
