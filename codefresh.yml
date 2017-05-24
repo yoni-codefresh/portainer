@@ -24,6 +24,6 @@ steps:
   build_image:
     type: build
     #working_directory: ${{build_frontend}}
-    dockerfile: ./build/linux/Dockerfile # see last command of build_frontend step
+    dockerfile: build/linux/Dockerfile # see last command of build_frontend step
     image_name: portainer/portainer
     tag: ${{CF_BRANCH}}
